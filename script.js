@@ -33,6 +33,10 @@ function checkGame(game) {
         document.getElementById("end-level-input").max = 713;
         maxLevel = 713;
     }
+
+    document.getElementById("start-level-input").value = " ";
+    document.getElementById("end-level-input").value = " ";
+
 }
 
 function calcSouls(start, end) {
@@ -106,3 +110,4 @@ function generateOutput() {
         }
     }
 }
+
