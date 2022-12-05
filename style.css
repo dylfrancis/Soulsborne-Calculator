@@ -1,0 +1,253 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #333;
+    font-family: adobe-garamond-pro, serif;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.game-select {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+:root {
+    --select-border: #666;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+.game-select {
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#games {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 10px;
+    padding: 0.25em 0.5em;
+    font-size: 25px;
+    cursor: pointer;
+    line-height: 1.1;
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+    text-align-last: center;
+}
+
+.level {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.start-level {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid var(--select-border);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.end-level {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid var(--select-border);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.output {
+    width: 100%;
+}
+
+.calc-button {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+    padding: 10px 50px;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+    border: 1px solid #111;
+    border-radius: 10px;
+    background-color: rgb(228, 123, 42);
+    cursor: pointer;
+}
+
+.calc:hover {
+    border: 1px solid #222;
+    background-color: rgb(136, 62, 5);
+    color: #222;
+}
+
+.calc:active {
+    border: 1px solid black;
+    background-color: rgb(90, 41, 3);
+    color: black;
+}
+
+.output {
+    text-align: center;
+    font-size: 25px;
+    padding: 75px;
+
+}
+
+.message {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.souls {
+    color: rgb(228, 123, 42);
+}
+
+.error {
+    color: red;
+}
+
+@media (max-width: 640px) {
+    .header {
+        width: 100%;
+        height: auto;
+        background-color: #111;
+    }
+
+    .header-name {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 275px;
+    }
+
+    .game-select {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #games {
+        width: 100%;
+        min-width: 15ch;
+        max-width: 30ch;
+        border: 1px solid var(--select-border);
+        border-radius: 10px;
+        padding: 0.25em 0.5em;
+        font-size: 20px;
+        cursor: pointer;
+        line-height: 1.1;
+        color: #fff;
+        background-color: #222;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .level {
+        width: 50%;
+        float: left;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .start-level {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        background-color: #222;
+        border: 1px solid var(--select-border);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .end-level {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        background-color: #222;
+        border: 1px solid var(--select-border);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .output {
+        font-size: 20px;
+    }
+}
