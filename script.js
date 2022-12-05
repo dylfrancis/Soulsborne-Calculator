@@ -29,7 +29,7 @@ function checkGame(game) {
         maxLevel = 544;
     }
     else if (game.value == "eldenring") {
-        document.getElementById("level").max = 713;
+        document.getElementById("start-level-input").max = 713;
         document.getElementById("end-level-input").max = 713;
         maxLevel = 713;
     }
